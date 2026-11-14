@@ -182,15 +182,16 @@ img {
 }
 
 .mascot-badge {
-  width: 320px;
-  height: 320px;
-  max-width: 90%;
+  max-width: 520px;
+  width: 90%;
+  height: auto;
+  aspect-ratio: 2816 / 1536;
   border: var(--border-ink-thick);
-  border-radius: 8px;
+  border-radius: 6px;
   margin: 0 auto 1.5rem;
   box-shadow: var(--shadow-dossier-lg);
   object-fit: cover;
-  background: var(--parchment-base);
+  background: #110e0b;
   display: block;
 }
 
