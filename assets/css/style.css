@@ -1,29 +1,40 @@
 /* ==========================================================================
-   busyQBee Studios — Minimal Noir Cartoony Stylesheet
-   Clean 3-column layout, bold ink outlines, warm sodium lighting, zero clutter
+   busyQBee Studios — 1970s Analogue / Parchment & Noir Stylesheet
+   Tactile manila dossiers, typewriter monospace, rubber stamps,
+   aged paper, faded tungsten lamps, and warm ink halftones.
    ========================================================================== */
 
 :root {
-  --ink-black: #080a0f;
-  --noir-bg: #0d1117;
-  --noir-surface: #141a24;
-  --noir-panel: #1a2230;
-  --noir-panel-hover: #222d40;
+  /* 1970s Aged Manila & Parchment Palette */
+  --bg-desk: #181512;
+  --parchment-base: #dfd4be;
+  --parchment-light: #ece3cf;
+  --parchment-dark: #ccbe9f;
+  --parchment-shadow: #b3a27f;
   
-  --amber-lamp: #f59e0b;
-  --amber-glow: #fbbf24;
-  --radar-green: #34d399;
-  --sigint-cyan: #38bdf8;
+  --ink-primary: #1e1914;
+  --ink-secondary: #42382e;
+  --ink-faded: #6d5f52;
+  --ink-red-stamp: #99281e;
+  --ink-red-faded: #bb382d;
   
-  --paper-cream: #f4ede2;
-  --paper-dim: #94a3b8;
+  /* 70s Accents: Mustard, Oxblood, Faded Teal, Tungsten Amber */
+  --retro-mustard: #c98a2c;
+  --retro-amber: #d97706;
+  --retro-oxblood: #7c221a;
+  --retro-teal: #3b6b68;
+  --retro-green: #2e5c38;
   
-  --shadow-comic: 3px 3px 0px #000000;
-  --shadow-comic-lg: 6px 6px 0px #000000;
-
-  --font-display: -apple-system, BlinkMacSystemFont, "Trebuchet MS", "Impact", sans-serif;
-  --font-mono: "Courier New", Courier, ui-monospace, Menlo, monospace;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --border-ink: 2px solid #231c16;
+  --border-ink-thick: 3px solid #1a140f;
+  
+  /* Analogue Print Shadows */
+  --shadow-dossier: 3px 4px 0px #1a140f;
+  --shadow-dossier-lg: 6px 7px 0px #120d09;
+  
+  --font-typewriter: "Courier New", Courier, ui-monospace, Menlo, monospace;
+  --font-header: "American Typewriter", "Courier New", Courier, monospace;
+  --font-body: "Courier New", Courier, Georgia, serif;
 }
 
 *, *::before, *::after {
@@ -34,32 +45,36 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: var(--font-sans);
-  background-color: var(--ink-black);
-  color: var(--paper-cream);
+  font-family: var(--font-body);
+  background-color: var(--bg-desk);
+  color: var(--ink-primary);
   line-height: 1.5;
 }
 
+/* Desk texture background with warm tungsten desk lamp glow */
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--noir-bg);
+  background-color: var(--bg-desk);
   background-image: 
-    radial-gradient(circle at 15% 15%, rgba(245, 158, 11, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 85% 15%, rgba(56, 189, 248, 0.06) 0%, transparent 40%),
-    radial-gradient(#18202d 1px, transparent 1px);
-  background-size: 100% 100%, 100% 100%, 16px 16px;
+    radial-gradient(circle at 50% 10%, rgba(201, 138, 44, 0.18) 0%, transparent 55%),
+    radial-gradient(circle at 80% 80%, rgba(59, 107, 104, 0.1) 0%, transparent 45%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.06), rgba(0,0,0,0.06) 1px, transparent 1px, transparent 4px);
+  color: var(--ink-primary);
 }
 
 a {
-  color: var(--amber-glow);
-  text-decoration: none;
-  transition: all 0.2s ease;
+  color: var(--ink-red-stamp);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+  transition: all 0.15s ease;
 }
 
 a:hover {
-  color: #fff;
+  color: var(--retro-oxblood);
+  background-color: rgba(153, 40, 30, 0.1);
 }
 
 img {
@@ -70,7 +85,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 1.25rem;
 }
@@ -79,15 +94,14 @@ img {
   max-width: 840px;
 }
 
-/* Navbar */
+/* 1970s Agency Manila Header */
 .navbar {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(13, 17, 23, 0.95);
-  backdrop-filter: blur(8px);
-  border-bottom: 2px solid #000;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.6);
+  background: var(--parchment-base);
+  border-bottom: var(--border-ink-thick);
+  box-shadow: 0 4px 0px rgba(0, 0, 0, 0.6);
 }
 
 .nav-container {
@@ -101,19 +115,20 @@ img {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   font-weight: 800;
   font-size: 1.2rem;
   letter-spacing: -0.01em;
-  color: var(--paper-cream);
+  color: var(--ink-primary);
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .nav-logo {
-  width: 34px;
-  height: 34px;
-  border-radius: 6px;
-  border: 2px solid #000;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  border: var(--border-ink);
   box-shadow: 2px 2px 0px #000;
 }
 
@@ -125,74 +140,78 @@ img {
 }
 
 .nav-link {
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.88rem;
   font-weight: 700;
-  color: var(--paper-dim);
+  color: var(--ink-secondary);
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
 }
 
 .nav-link:hover {
-  color: var(--amber-glow);
+  color: var(--ink-red-stamp);
+  text-decoration: underline;
 }
 
 .nav-btn {
-  font-family: var(--font-mono);
-  background: var(--amber-lamp);
-  color: #000;
+  font-family: var(--font-typewriter);
+  background: var(--ink-red-stamp);
+  color: #fff !important;
   padding: 0.4rem 0.9rem;
-  border-radius: 4px;
   font-weight: 800;
   font-size: 0.82rem;
   text-transform: uppercase;
-  border: 2px solid #000;
-  box-shadow: var(--shadow-comic);
+  border: var(--border-ink);
+  box-shadow: 2px 2px 0px #000;
+  text-decoration: none;
+  letter-spacing: 0.04em;
 }
 
 .nav-btn:hover {
-  background: var(--amber-glow);
+  background: var(--retro-oxblood);
   transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0px #000;
-  color: #000;
+  box-shadow: 3px 3px 0px #000;
 }
 
-/* Minimal Hero */
+/* Minimal Hero Docket Header */
 .minimal-hero {
   text-align: center;
-  padding: 2.8rem 0 2rem;
+  padding: 3rem 0 2rem;
 }
 
 .mascot-badge {
-  width: 90px;
-  height: 90px;
-  border: 2px solid #000;
-  border-radius: 50%;
-  margin: 0 auto 1rem;
-  box-shadow: var(--shadow-comic-lg), 0 0 20px rgba(245, 158, 11, 0.2);
+  width: 96px;
+  height: 96px;
+  border: 3px solid #1a140f;
+  border-radius: 6px;
+  margin: 0 auto 1.2rem;
+  box-shadow: var(--shadow-dossier-lg);
   object-fit: cover;
   background: #000;
+  filter: sepia(0.3) contrast(1.1);
 }
 
 .minimal-title {
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   font-size: clamp(2rem, 4vw, 2.8rem);
   font-weight: 900;
   text-transform: uppercase;
-  color: #fff;
-  letter-spacing: -0.01em;
-  text-shadow: 2px 2px 0px #000;
+  color: var(--parchment-base);
+  letter-spacing: 0.02em;
+  text-shadow: 3px 3px 0px #000;
 }
 
 .minimal-tagline {
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.95rem;
-  color: var(--amber-glow);
+  color: var(--retro-mustard);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-top: 0.3rem;
+  letter-spacing: 0.1em;
+  margin-top: 0.4rem;
 }
 
-/* Horizontal 3-Card Grid */
+/* 3 Manila Folders / Dossiers Side-by-Side */
 .games-horizontal-section {
   padding: 1.5rem 0 3.5rem;
 }
@@ -203,28 +222,39 @@ img {
   gap: 1.5rem;
 }
 
+/* Manila Paper Card */
 .mini-game-card {
-  background: var(--noir-panel);
-  border: 2px solid #000;
-  border-radius: 6px;
+  background: var(--parchment-base);
+  background-image: linear-gradient(180deg, var(--parchment-light) 0%, var(--parchment-base) 100%);
+  border: var(--border-ink-thick);
+  border-radius: 4px;
   overflow: hidden;
-  box-shadow: var(--shadow-comic-lg);
+  box-shadow: var(--shadow-dossier-lg);
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .mini-game-card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0px #000;
-  border-color: var(--amber-lamp);
+  transform: translate(-2px, -3px);
+  box-shadow: 8px 10px 0px #0c0906;
+}
+
+/* Simulated folder tab at top */
+.mini-game-card::before {
+  content: "";
+  display: block;
+  height: 8px;
+  background: var(--parchment-shadow);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .mini-card-media {
   position: relative;
   height: 180px;
-  background: #000;
-  border-bottom: 2px solid #000;
+  background: #110e0b;
+  border-bottom: var(--border-ink);
   overflow: hidden;
 }
 
@@ -232,34 +262,43 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: sepia(0.2) contrast(1.05);
 }
 
+/* 70s Rubber Stamp Badges */
 .card-status-badge {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.72rem;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
-  padding: 0.2rem 0.6rem;
-  border: 1px solid #000;
-  box-shadow: 2px 2px 0px #000;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.55rem;
+  border: 2px dashed;
+  transform: rotate(-3deg);
 }
 
 .status-live {
-  background: var(--radar-green);
-  color: #000;
+  background: #fff6eb;
+  color: var(--ink-red-stamp);
+  border-color: var(--ink-red-stamp);
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.5);
 }
 
 .status-teaser {
-  background: var(--amber-lamp);
-  color: #000;
+  background: #fff6eb;
+  color: var(--retro-mustard);
+  border-color: var(--retro-mustard);
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.5);
 }
 
 .status-classified {
-  background: var(--sigint-cyan);
-  color: #000;
+  background: #fff6eb;
+  color: var(--retro-teal);
+  border-color: var(--retro-teal);
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.5);
 }
 
 .mini-card-body {
@@ -275,108 +314,113 @@ img {
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 0.8rem;
+  border-bottom: 1px dashed var(--parchment-shadow);
+  padding-bottom: 0.6rem;
 }
 
 .mini-icon {
   width: 44px;
   height: 44px;
-  border-radius: 6px;
-  border: 2px solid #000;
+  border-radius: 4px;
+  border: var(--border-ink);
   box-shadow: 2px 2px 0px #000;
   background: #000;
   flex-shrink: 0;
 }
 
 .mini-title {
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--ink-primary);
   line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .mini-subtitle {
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.76rem;
-  color: var(--amber-glow);
-  margin-top: 0.15rem;
+  font-weight: 700;
+  color: var(--ink-faded);
+  margin-top: 0.2rem;
 }
 
 .mini-desc {
   font-size: 0.88rem;
-  color: var(--paper-dim);
+  color: var(--ink-secondary);
   line-height: 1.5;
   margin-bottom: 1.2rem;
 }
 
 .mini-actions {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px dashed var(--parchment-shadow);
   padding-top: 0.9rem;
 }
 
 .availability-tag {
   display: block;
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.76rem;
-  font-weight: 700;
-  color: #fff;
-  background: #000;
+  font-weight: 800;
+  color: var(--ink-primary);
+  background: var(--parchment-light);
   padding: 0.35rem 0.5rem;
-  border: 1px solid var(--amber-lamp);
+  border: 1px solid var(--ink-secondary);
   margin-bottom: 0.6rem;
-  border-radius: 3px;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .availability-tag.play-btn {
-  background: var(--amber-lamp);
-  color: #000;
-  border-color: #000;
+  background: var(--ink-red-stamp);
+  color: #fff !important;
+  border: var(--border-ink);
   box-shadow: 2px 2px 0px #000;
   text-decoration: none;
 }
 
 .availability-tag.play-btn:hover {
-  background: var(--amber-glow);
+  background: var(--retro-oxblood);
   transform: translate(-1px, -1px);
   box-shadow: 3px 3px 0px #000;
-  color: #000;
 }
 
 .mini-links {
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.8rem;
-  color: var(--paper-dim);
+  color: var(--ink-faded);
 }
 
 .mini-links a {
-  color: var(--paper-dim);
+  color: var(--ink-secondary);
 }
 
 .mini-links a:hover {
-  color: var(--amber-glow);
+  color: var(--ink-red-stamp);
 }
 
-/* Site Map Section */
+/* Site Map Section — Manila Folder Style */
 .sitemap-section {
-  background: var(--noir-surface);
-  border: 2px solid #000;
-  border-radius: 6px;
+  background: var(--parchment-base);
+  border: var(--border-ink-thick);
+  border-radius: 4px;
   padding: 2rem;
   margin-bottom: 4rem;
-  box-shadow: var(--shadow-comic);
+  box-shadow: var(--shadow-dossier-lg);
 }
 
 .sitemap-header {
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
-  color: #fff;
-  border-bottom: 2px solid #000;
+  color: var(--ink-primary);
+  border-bottom: 2px solid var(--ink-primary);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
 }
 
 .sitemap-grid {
@@ -386,13 +430,15 @@ img {
 }
 
 .sitemap-col h4 {
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.82rem;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--amber-glow);
+  color: var(--ink-red-stamp);
   margin-bottom: 0.8rem;
+  border-bottom: 1px dotted var(--ink-faded);
+  padding-bottom: 0.3rem;
 }
 
 .sitemap-col ul {
@@ -403,47 +449,50 @@ img {
 }
 
 .sitemap-col li a {
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.84rem;
-  color: var(--paper-dim);
+  color: var(--ink-secondary);
+  text-decoration: none;
 }
 
 .sitemap-col li a:hover {
-  color: #fff;
+  color: var(--ink-red-stamp);
+  text-decoration: underline;
   padding-left: 3px;
 }
 
-/* Legal Document Styles */
+/* Legal Documents in Manila Docket Style */
 .legal-header {
-  padding: 3rem 0 1.5rem;
-  border-bottom: 2px solid #000;
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 2px solid var(--parchment-shadow);
   margin-bottom: 2rem;
 }
 
 .legal-back {
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.85rem;
   text-transform: uppercase;
-  color: var(--paper-dim);
+  color: var(--retro-mustard);
   margin-bottom: 1rem;
   display: inline-block;
 }
 
 .legal-title {
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   font-size: clamp(1.8rem, 3.5vw, 2.5rem);
   font-weight: 900;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--parchment-base);
   margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 0px #000;
 }
 
 .legal-meta {
   display: flex;
   gap: 1.5rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.8rem;
-  color: var(--amber-glow);
+  color: var(--retro-mustard);
   flex-wrap: wrap;
 }
 
@@ -451,46 +500,48 @@ img {
   display: flex;
   gap: 0.6rem;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid var(--parchment-shadow);
   padding-bottom: 0.6rem;
   flex-wrap: wrap;
 }
 
 .legal-tab-btn {
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   padding: 0.35rem 0.8rem;
-  background: var(--noir-surface);
-  color: var(--paper-dim);
+  background: var(--parchment-base);
+  color: var(--ink-primary);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
-  border: 2px solid #000;
+  border: var(--border-ink);
   box-shadow: 2px 2px 0px #000;
+  text-decoration: none;
 }
 
 .legal-tab-btn.active, .legal-tab-btn:hover {
-  background: var(--amber-lamp);
-  color: #000;
+  background: var(--ink-red-stamp);
+  color: #fff !important;
 }
 
 .legal-content {
-  background: var(--noir-panel);
-  border: 2px solid #000;
-  box-shadow: var(--shadow-comic-lg);
-  border-radius: 6px;
+  background: var(--parchment-base);
+  border: var(--border-ink-thick);
+  box-shadow: var(--shadow-dossier-lg);
+  border-radius: 4px;
   padding: 2.5rem;
   margin-bottom: 3.5rem;
+  color: var(--ink-primary);
 }
 
 .legal-content h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-header);
   font-size: 1.3rem;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--ink-primary);
   margin: 1.8rem 0 0.8rem;
   padding-bottom: 0.4rem;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--ink-primary);
 }
 
 .legal-content h2:first-of-type {
@@ -498,14 +549,14 @@ img {
 }
 
 .legal-content p {
-  color: var(--paper-dim);
+  color: var(--ink-secondary);
   font-size: 0.92rem;
   line-height: 1.6;
   margin-bottom: 0.9rem;
 }
 
 .legal-content ul {
-  color: var(--paper-dim);
+  color: var(--ink-secondary);
   padding-left: 1.5rem;
   margin-bottom: 1rem;
   font-size: 0.92rem;
@@ -516,20 +567,21 @@ img {
 }
 
 .legal-notice-box {
-  background: #000;
-  border-left: 4px solid var(--amber-lamp);
+  background: var(--parchment-light);
+  border: 1px solid var(--ink-red-stamp);
+  border-left: 6px solid var(--ink-red-stamp);
   padding: 1rem 1.25rem;
   margin: 1.2rem 0;
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.86rem;
-  color: var(--amber-glow);
+  color: var(--ink-primary);
 }
 
-/* Footer */
+/* Footer in Desk Dark */
 .footer {
   margin-top: auto;
-  background: #000;
-  border-top: 2px solid #000;
+  background: #0f0c0a;
+  border-top: 2px solid #231c16;
   padding: 2rem 0;
 }
 
@@ -539,9 +591,13 @@ img {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-typewriter);
   font-size: 0.8rem;
-  color: var(--paper-dim);
+  color: var(--parchment-shadow);
+}
+
+.footer-bottom a {
+  color: var(--retro-mustard);
 }
 
 /* Responsive */
