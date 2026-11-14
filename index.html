@@ -3,442 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>busyQBee Studios | Tactile Simulation &amp; Atmospheric Noir Games</title>
-  <meta name="description" content="busyQBee Studios is an independent game studio crafting tactile, physics-driven simulations and atmospheric noir-cartoony worlds with dramatic lighting.">
+  <title>busyQBee Studios</title>
+  <meta name="description" content="busyQBee Studios — Independent game studio.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Minimal Header -->
   <header class="navbar">
     <div class="container nav-container">
       <a href="index.html" class="nav-brand">
         <img src="assets/images/busyqbee_logo.svg" alt="busyQBee Studios Logo" class="nav-logo">
         <span>busyQBee Studios</span>
       </a>
-
-      <button class="mobile-toggle" aria-label="Toggle navigation menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
-
       <ul class="nav-links">
-        <li><a href="#portfolio" class="nav-link">Docket (Games)</a></li>
-        <li><a href="#about" class="nav-link">Pillars</a></li>
-        <li><a href="#privacy-stance" class="nav-link">Zero Data</a></li>
-        <li><a href="#legal" class="nav-link">Legal Hub</a></li>
-        <li><a href="credits.html" class="nav-link">Credits</a></li>
-        <li><a href="#contact" class="nav-btn">Inquiries</a></li>
+        <li><a href="#games" class="nav-link">Games</a></li>
+        <li><a href="#sitemap" class="nav-link">Site Map</a></li>
+        <li><a href="mailto:kai@sunraypm.com" class="nav-btn">kai@sunraypm.com</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="dossier-tag">
-          <span class="badge-dot"></span>
-          CLASSIFIED DOSSIER &bull; INDIE GAME STUDIO
-        </div>
-        <h1 class="hero-title">Atmospheric Noir &bull; Tactile Worlds</h1>
-        <p class="hero-subtitle">
-          We craft games with mechanical weight and bold lighting aesthetics: deep analog controls, heavy momentum physics, sodium streetlights, and noir-cartoony styling. Built with Godot for mobile mastery.
-        </p>
-        <div class="hero-actions">
-          <a href="#portfolio" class="btn btn-primary">Inspect Portfolio</a>
-          <a href="#privacy-stance" class="btn btn-secondary">Zero-Data Philosophy</a>
-        </div>
-      </div>
+  <main class="container">
+    <!-- Hero / Headline with Noir Mascot -->
+    <section class="minimal-hero">
+      <img src="assets/images/mascot_noir_bee.png" alt="busyQBee Mascot" class="mascot-badge">
+      <h1 class="minimal-title">busyQBee Studios</h1>
+      <p class="minimal-tagline">Tactile simulations &bull; Atmospheric worlds</p>
+    </section>
 
-      <div class="mascot-frame">
-        <img src="assets/images/mascot_noir_bee.png" alt="busyQBee Noir Mascot" class="mascot-img">
-        <div class="mascot-caption">Agent 0-Bee &bull; Chief of Operations</div>
-      </div>
-    </div>
-  </section>
+    <!-- 3 Games Horizontally -->
+    <section id="games" class="games-horizontal-section">
+      <div class="games-horizontal-grid">
 
-  <!-- Zero Data Collection Banner -->
-  <section id="privacy-stance" class="container">
-    <div class="zero-data-banner">
-      <div class="zero-data-stamp">
-        ZERO<br>DATA<br>LOGGED
-      </div>
-      <div class="zero-data-text">
-        <h3>Privacy Philosophy: We Collect Zero Personal Data</h3>
-        <p>
-          We build tactile video games, not surveillance machinery. Our titles run entirely on your local device with no user accounts, no tracking cookies, no personal identity harvesting, and zero data brokering. Your saves stay in your hands.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Case Files</span>
-        <h2 class="section-title">Operations &amp; Upcoming Titles</h2>
-        <p class="section-description">
-          Sun-drenched diorama islands, 1970s diesel switchyards, and classified Cold War radar listening posts.
-        </p>
-      </div>
-
-      <div class="portfolio-grid">
-
-        <!-- GAME 1: copterCove (Featured Title) -->
-        <article class="game-card" id="coptercove">
-          <div class="game-media">
-            <img src="assets/images/coptercove_splash.jpg" alt="copterCove - Island Flight Simulator" loading="lazy">
-            <div class="media-overlay">
-              <div class="game-icon-badge">
-                <img src="assets/images/coptercove_icon.png" alt="copterCove App Icon" class="game-icon">
-                <div>
-                  <h3 style="color: #fff; font-size: 1.15rem; font-weight: 800; text-transform: uppercase;">copterCove</h3>
-                  <span style="color: var(--amber-glow); font-size: 0.85rem; font-family: var(--font-typewriter);">Sunblade Shores: Island Flight</span>
-                </div>
-              </div>
-            </div>
+        <!-- GAME 1: copterCove -->
+        <article class="mini-game-card">
+          <div class="mini-card-media">
+            <img src="assets/images/coptercove_splash.jpg" alt="copterCove" loading="lazy">
+            <span class="card-status-badge status-live">Closed Beta</span>
           </div>
-          <div class="game-content">
-            <div>
-              <div class="game-status status-active">
-                &bull; Active Title &bull; Closed Beta
+          <div class="mini-card-body">
+            <div class="mini-card-header">
+              <img src="assets/images/coptercove_icon.png" alt="copterCove Icon" class="mini-icon">
+              <div>
+                <h2 class="mini-title">copterCove</h2>
+                <div class="mini-subtitle">Sunblade Shores: Island Flight</div>
               </div>
-              <h3 class="game-title">copterCove</h3>
-              <p class="game-tagline">Tactile Tropical Flight &amp; Island Logistics Simulator</p>
-              <p class="game-desc">
-                Take to the skies in your helicopter across a vibrant, sun-drenched archipelago crafted like a living tabletop diorama.
-                Glide over translucent turquoise seas, make pinpoint landings on rugged coastal pads, hoist urgent cargo, and build thriving trade networks connecting isolated outposts.
-              </p>
-
-              <ul class="feature-list">
-                <li class="feature-item">
-                  <span class="feature-bullet">&diams;</span>
-                  <div><strong>Hands-On Flight Physics:</strong> Smooth, tactile helicopter flight with responsive winch and sling-load operations.</div>
-                </li>
-                <li class="feature-item">
-                  <span class="feature-bullet">&diams;</span>
-                  <div><strong>Living Diorama World:</strong> Handcrafted low-poly archipelago bathed in sun-soaked lighting, dynamic squalls, and tropical soundscapes.</div>
-                </li>
-                <li class="feature-item">
-                  <span class="feature-bullet">&diams;</span>
-                  <div><strong>Procedural Island Economy:</strong> Fulfill supply and demand chains, upgrade helicopter rotors, engines, and hoist winches.</div>
-                </li>
-              </ul>
             </div>
-
-            <div class="game-actions">
-              <div class="action-row">
-                <a href="coptercove-privacy.html" class="btn btn-secondary">Privacy Policy</a>
-                <a href="coptercove-tos.html" class="btn btn-outline">Terms of Service</a>
-              </div>
-              <div class="legal-links-row">
-                <span>Direct Links:</span>
-                <a href="coptercove-privacy.html">&bull; Privacy Notice</a>
-                <a href="coptercove-tos.html">&bull; EULA Agreement</a>
+            <p class="mini-desc">
+              Tropical island flight &amp; cargo sling-load simulation in a living tabletop diorama.
+            </p>
+            <div class="mini-actions">
+              <span class="availability-tag">Where to Get: Google Play (Closed Testing)</span>
+              <div class="mini-links">
+                <a href="coptercove-privacy.html">Privacy</a> &bull;
+                <a href="coptercove-tos.html">Terms</a>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- GAME 2: railkeep (Teaser Title) -->
-        <article class="game-card teaser-card" id="railkeep">
-          <div class="game-media">
-            <img src="assets/images/railkeep_splash.png" alt="railkeep - Railway Management & Operations Tycoon" loading="lazy">
-            <div class="media-overlay">
-              <div class="game-icon-badge">
-                <img src="assets/images/railkeep_icon.png" alt="railkeep Icon" class="game-icon">
-                <div>
-                  <h3 style="color: #fff; font-size: 1.15rem; font-weight: 800; text-transform: uppercase;">railkeep</h3>
-                  <span style="color: var(--amber-glow); font-size: 0.85rem; font-family: var(--font-typewriter);">To Be Announced Soon</span>
-                </div>
-              </div>
-            </div>
+        <!-- GAME 2: railkeep -->
+        <article class="mini-game-card teaser-card">
+          <div class="mini-card-media">
+            <img src="assets/images/railkeep_splash.png" alt="railkeep" loading="lazy">
+            <span class="card-status-badge status-teaser">Coming Soon</span>
           </div>
-          <div class="game-content">
-            <div>
-              <div class="game-status status-teaser">
-                &bull; Teaser Preview &bull; To Be Announced Soon
+          <div class="mini-card-body">
+            <div class="mini-card-header">
+              <img src="assets/images/railkeep_icon.png" alt="railkeep Icon" class="mini-icon">
+              <div>
+                <h2 class="mini-title">railkeep</h2>
+                <div class="mini-subtitle">Analogue Rail Operations Tycoon</div>
               </div>
-
-              <div class="teaser-banner">
-                <span>[TEASER NOTICE] Official gameplay reveal and public beta announcement arriving soon.</span>
-              </div>
-
-              <h3 class="game-title">railkeep</h3>
-              <p class="game-tagline">1960s–1970s Analogue Railway Tycoon &amp; Tactile Locomotive Operations</p>
-              <p class="game-desc">
-                A 2D top-down railway management and operations tycoon. Merging the tactile, physics-driven locomotive controls of heavy freight operations with macro logistics expansion. No abstracted point-and-click dispatching—every switch is thrown and every train is manually driven.
-              </p>
-
-              <ul class="feature-list">
-                <li class="feature-item">
-                  <span class="feature-bullet">&diams;</span>
-                  <div><strong>Tactile Cab Controls:</strong> Authentic notch throttle, mechanical reverser, independent locomotive brake, and realistic train air pipe charging (70–90 PSI).</div>
-                </li>
-                <li class="feature-item">
-                  <span class="feature-bullet">&diams;</span>
-                  <div><strong>Momentum &amp; Hazard Physics:</strong> Realistic freight tonnage physics, downhill brake management, wheel slip on wet iron, and risk of derailments.</div>
-                </li>
-                <li class="feature-item">
-                  <span class="feature-bullet">&diams;</span>
-                  <div><strong>1960s–1970s Analogue Fidelity:</strong> EMD/ALCO style diesel-electric switchers, riveted rolling stock, mechanical semaphores, and carbon-copy waybills.</div>
-                </li>
-              </ul>
             </div>
-
-            <div class="game-actions">
-              <div class="action-row">
-                <a href="railkeep-privacy.html" class="btn btn-secondary">Privacy Policy</a>
-                <a href="railkeep-tos.html" class="btn btn-outline">Terms of Service</a>
-              </div>
-              <div class="legal-links-row">
-                <span>Direct Links:</span>
-                <a href="railkeep-privacy.html">&bull; Privacy Notice</a>
-                <a href="railkeep-tos.html">&bull; Terms &amp; Conditions</a>
+            <p class="mini-desc">
+              1960s–70s tactile diesel-electric shunting, brake pipe momentum, and freight lines.
+            </p>
+            <div class="mini-actions">
+              <span class="availability-tag">Coming Soon &bull; Mobile &amp; PC</span>
+              <div class="mini-links">
+                <a href="railkeep-privacy.html">Privacy</a> &bull;
+                <a href="railkeep-tos.html">Terms</a>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- GAME 3: rachel (Teaser Title) -->
-        <article class="game-card teaser-card" id="rachel">
-          <div class="game-media">
-            <img src="assets/images/rachel_splash.png" alt="Rachel - Cold War SIGINT Noir Simulation" loading="lazy">
-            <div class="media-overlay">
-              <div class="game-icon-badge">
-                <img src="assets/images/rachel_icon.svg" alt="Rachel Icon" class="game-icon" style="padding: 6px;">
-                <div>
-                  <h3 style="color: #fff; font-size: 1.15rem; font-weight: 800; text-transform: uppercase;">Rachel</h3>
-                  <span style="color: var(--sigint-cyan); font-size: 0.85rem; font-family: var(--font-typewriter);">Classified Docket</span>
-                </div>
-              </div>
-            </div>
+        <!-- GAME 3: Rachel -->
+        <article class="mini-game-card teaser-card">
+          <div class="mini-card-media">
+            <img src="assets/images/rachel_splash.png" alt="Rachel" loading="lazy">
+            <span class="card-status-badge status-classified">Coming Soon</span>
           </div>
-          <div class="game-content">
-            <div>
-              <div class="game-status status-classified">
-                &bull; Teaser Preview &bull; Classified Dossier
+          <div class="mini-card-body">
+            <div class="mini-card-header">
+              <img src="assets/images/rachel_icon.svg" alt="Rachel Icon" class="mini-icon" style="padding: 4px;">
+              <div>
+                <h2 class="mini-title">Rachel</h2>
+                <div class="mini-subtitle">Cold War SIGINT Noir</div>
               </div>
-
-              <div class="teaser-banner" style="border-color: var(--sigint-cyan); color: var(--sigint-cyan);">
-                <span>[SITE K-9 DOCKET] Black-budget desert installation. Official public teaser scheduled soon.</span>
-              </div>
-
-              <h3 class="game-title">Rachel</h3>
-              <p class="game-tagline">Cold War SIGINT Radar Intercept &amp; Black Site Noir</p>
-              <p class="game-desc">
-                You are the Operations Director of Site K-9 ("Halcyon Flats"), a classified desert installation operating between 1955 and 1989.
-                By day, intercept adversary flights on tactile phosphor radar scopes, verify suspect dossiers across rotary phones, and unmask foreign infiltration. By night, walk the floodlit tarmac alone and uncover what was unearthed beneath Hangar 4.
-              </p>
-
-              <ul class="feature-list">
-                <li class="feature-item">
-                  <span class="feature-bullet">&diams;</span>
-                  <div><strong>Tactile Workload Multi-Tasking:</strong> Concurrent procedural workflows—ticking darkroom chemical timers, zero-beating radio frequencies, and real-time radar tracks.</div>
-                </li>
-                <li class="feature-item">
-                  <span class="feature-bullet">&diams;</span>
-                  <div><strong>Luxurious Retro Noir Aesthetic:</strong> Volumetric sodium floodlights, humming CRT phosphors, Bakelite dials, and ominous desert shadows.</div>
-                </li>
-                <li class="feature-item">
-                  <span class="feature-bullet">&diams;</span>
-                  <div><strong>Counter-Espionage Deduction:</strong> Synthesize fragmented telemetry, weed out disinformation, and shape branching Cold War geopolitical outcomes.</div>
-                </li>
-              </ul>
             </div>
-
-            <div class="game-actions">
-              <div class="action-row">
-                <a href="rachel-privacy.html" class="btn btn-secondary">Privacy Policy</a>
-                <a href="rachel-tos.html" class="btn btn-outline">Terms of Service</a>
-              </div>
-              <div class="legal-links-row">
-                <span>Direct Links:</span>
-                <a href="rachel-privacy.html">&bull; Privacy Notice</a>
-                <a href="rachel-tos.html">&bull; Terms &amp; Conditions</a>
+            <p class="mini-desc">
+              Director's desk at Site K-9. Tactile CRT radar intercepts, dossiers, and desert black-site noir.
+            </p>
+            <div class="mini-actions">
+              <span class="availability-tag">Coming Soon &bull; Classified Docket</span>
+              <div class="mini-links">
+                <a href="rachel-privacy.html">Privacy</a> &bull;
+                <a href="rachel-tos.html">Terms</a>
               </div>
             </div>
           </div>
         </article>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="section" style="background: var(--noir-surface); border-top: 2px solid #000; border-bottom: 2px solid #000;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Core Tenets</span>
-        <h2 class="section-title">The busyQBee Standard</h2>
-        <p class="section-description">
-          Mobile titles deserve genuine physical simulation, nuanced tactile inputs, and deep noir atmosphere.
-        </p>
-      </div>
-
-      <div class="values-grid">
-        <div class="value-card">
-          <div class="value-icon">&#9881;</div>
-          <h3 class="value-title">Tactile Mechanical Depth</h3>
-          <p class="value-text">
-            No shallow quick-time events. We simulate real brake pipes, throttle notches, cargo swing physics, and radio frequencies so every interaction feels mechanical and deliberate.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <div class="value-icon">&#10024;</div>
-          <h3 class="value-title">Noir Cartoony Lighting</h3>
-          <p class="value-text">
-            Atmosphere defines our visual identity. High-contrast ink lines, 2D CanvasTexture normal mapping, volumetric sodium streetlights, and moody phosphor CRT glows.
-          </p>
-        </div>
-
-        <div class="value-card">
-          <div class="value-icon">&#9889;</div>
-          <h3 class="value-title">Mobile-First Performance</h3>
-          <p class="value-text">
-            Engineered with decoupled architecture and native engine optimizations in Godot, ensuring rock-solid 60 FPS performance, low thermal footprint, and zero battery drain.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Legal & Privacy Hub Section -->
-  <section id="legal" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Compliance</span>
-        <h2 class="section-title">Legal Terms &amp; Policies</h2>
-        <p class="section-description">
-          Straightforward policies for each title. Transparent, minimal, and zero data harvesting.
-        </p>
-      </div>
-
-      <div class="legal-grid">
-        <div class="legal-block">
-          <h4><span style="color: var(--radar-green);">&#9679;</span> copterCove</h4>
-          <p style="font-size: 0.85rem; color: var(--paper-dim); margin-bottom: 1rem;">
-            Sunblade Shores flight simulation player agreement and privacy notice.
-          </p>
+    <!-- Site Map Section Below -->
+    <section id="sitemap" class="sitemap-section">
+      <div class="sitemap-header">Site Map</div>
+      <div class="sitemap-grid">
+        <div class="sitemap-col">
+          <h4>Games</h4>
           <ul>
-            <li><a href="coptercove-privacy.html">&rarr; Privacy Policy</a></li>
-            <li><a href="coptercove-tos.html">&rarr; Terms of Service (ToS)</a></li>
+            <li><a href="#games">copterCove (Closed Beta)</a></li>
+            <li><a href="#games">railkeep (Teaser)</a></li>
+            <li><a href="#games">Rachel (Teaser)</a></li>
           </ul>
         </div>
 
-        <div class="legal-block">
-          <h4><span style="color: var(--amber-glow);">&#9679;</span> railkeep</h4>
-          <p style="font-size: 0.85rem; color: var(--paper-dim); margin-bottom: 1rem;">
-            Analogue railway operations tycoon legal governance and policies.
-          </p>
+        <div class="sitemap-col">
+          <h4>Legal &amp; Privacy Policies</h4>
           <ul>
-            <li><a href="railkeep-privacy.html">&rarr; Privacy Policy</a></li>
-            <li><a href="railkeep-tos.html">&rarr; Terms of Service (ToS)</a></li>
+            <li><a href="coptercove-privacy.html">copterCove Privacy Policy</a></li>
+            <li><a href="coptercove-tos.html">copterCove Terms of Service</a></li>
+            <li><a href="railkeep-privacy.html">railkeep Privacy Policy</a></li>
+            <li><a href="railkeep-tos.html">railkeep Terms of Service</a></li>
+            <li><a href="rachel-privacy.html">Rachel Privacy Policy</a></li>
+            <li><a href="rachel-tos.html">Rachel Terms of Service</a></li>
+            <li><a href="privacy.html">General Privacy Policy</a></li>
+            <li><a href="terms.html">General Terms of Service</a></li>
           </ul>
         </div>
 
-        <div class="legal-block">
-          <h4><span style="color: var(--sigint-cyan);">&#9679;</span> Rachel</h4>
-          <p style="font-size: 0.85rem; color: var(--paper-dim); margin-bottom: 1rem;">
-            Cold War SIGINT black-budget simulation legal docket and terms.
-          </p>
+        <div class="sitemap-col">
+          <h4>Studio &amp; Contact</h4>
           <ul>
-            <li><a href="rachel-privacy.html">&rarr; Privacy Policy</a></li>
-            <li><a href="rachel-tos.html">&rarr; Terms of Service (ToS)</a></li>
-          </ul>
-        </div>
-
-        <div class="legal-block">
-          <h4><span style="color: var(--paper-cream);">&#9733;</span> Studio Hub</h4>
-          <p style="font-size: 0.85rem; color: var(--paper-dim); margin-bottom: 1rem;">
-            Universal studio-wide terms and open-source acknowledgments.
-          </p>
-          <ul>
-            <li><a href="privacy.html">&rarr; Studio Privacy Policy</a></li>
-            <li><a href="terms.html">&rarr; Studio Terms of Service</a></li>
-            <li><a href="credits.html">&rarr; Open-Source Credits</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section" style="background: var(--noir-surface); border-top: 2px solid #000;">
-    <div class="container container-narrow" style="text-align: center;">
-      <span class="section-tag">Transmission</span>
-      <h2 class="section-title">Connect with busyQBee Studios</h2>
-      <p class="section-description" style="margin-bottom: 2rem;">
-        For publisher inquiries, press dockets, or technical feedback:
-      </p>
-      <div style="display: inline-flex; flex-direction: column; gap: 0.8rem; background: #000; padding: 2rem; border-radius: 6px; border: 2px solid var(--amber-lamp); box-shadow: var(--shadow-comic);">
-        <div style="font-family: var(--font-typewriter); font-size: 0.9rem; font-weight: 700; color: var(--amber-glow); text-transform: uppercase;">Direct Dispatch</div>
-        <a href="mailto:support@busyqbee.com" style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: #fff;">support@busyqbee.com</a>
-        <div style="font-family: var(--font-typewriter); font-size: 0.82rem; color: var(--paper-dim);">Turnaround within 48 business hours</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="footer-logo-row">
-            <img src="assets/images/busyqbee_logo.svg" alt="busyQBee Studios" style="width: 32px; height: 32px;">
-            <span>busyQBee Studios</span>
-          </div>
-          <p class="footer-desc">
-            Independent mobile game studio specializing in tactile physics, noir cartoony aesthetics, and rich systemic simulations.
-          </p>
-        </div>
-
-        <div class="footer-col">
-          <h5>Docket</h5>
-          <ul>
-            <li><a href="#coptercove">copterCove</a></li>
-            <li><a href="#railkeep">railkeep (Teaser)</a></li>
-            <li><a href="#rachel">Rachel (Teaser)</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h5>Legal Policies</h5>
-          <ul>
-            <li><a href="coptercove-privacy.html">copterCove Privacy</a></li>
-            <li><a href="coptercove-tos.html">copterCove ToS</a></li>
-            <li><a href="railkeep-privacy.html">railkeep Privacy</a></li>
-            <li><a href="railkeep-tos.html">railkeep ToS</a></li>
-            <li><a href="rachel-privacy.html">Rachel Privacy</a></li>
-            <li><a href="rachel-tos.html">Rachel ToS</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h5>Studio</h5>
-          <ul>
-            <li><a href="privacy.html">Studio Privacy</a></li>
-            <li><a href="terms.html">Studio Terms</a></li>
             <li><a href="credits.html">Open-Source Credits</a></li>
-            <li><a href="#contact">Contact Support</a></li>
+            <li><a href="mailto:kai@sunraypm.com">Support: kai@sunraypm.com</a></li>
           </ul>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="footer-bottom">
-        <div>&copy; 2026 busyQBee Studios. Zero user tracking. All rights reserved.</div>
-        <div>Built for tactile performance &bull; Powered by Godot Engine</div>
-      </div>
+  <!-- Minimal Footer -->
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <div>&copy; 2026 busyQBee Studios &bull; <a href="mailto:kai@sunraypm.com">kai@sunraypm.com</a></div>
+      <div>Zero data collected &bull; Powered by Godot Engine</div>
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
