@@ -180,16 +180,17 @@ img {
   padding: 3rem 0 2rem;
 }
 
-.mascot-badge {
-  width: 96px;
-  height: 96px;
-  border: 3px solid #1a140f;
-  border-radius: 6px;
+.studio-emblem-banner {
+  max-width: 440px;
+  width: 90%;
+  height: auto;
   margin: 0 auto 1.2rem;
+  border: var(--border-ink-thick);
+  border-radius: 6px;
   box-shadow: var(--shadow-dossier-lg);
-  object-fit: cover;
-  background: #000;
-  filter: sepia(0.3) contrast(1.1);
+  background: #110e0b;
+  display: block;
+  filter: sepia(0.15) contrast(1.05);
 }
 
 .minimal-title {
