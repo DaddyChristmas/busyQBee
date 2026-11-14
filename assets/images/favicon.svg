@@ -1,55 +1,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <defs>
-    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffd54f"/>
-      <stop offset="50%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#d97706"/>
-    </linearGradient>
-    <linearGradient id="wingGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4"/>
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#f59e0b" flood-opacity="0.35"/>
+    <!-- 70s Warm Parchment Background & Ink Dropshadow -->
+    <filter id="inkShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="3" stdDeviation="0" flood-color="#120d09" flood-opacity="0.9"/>
     </filter>
+    <linearGradient id="parchmentBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ece3cf"/>
+      <stop offset="100%" stop-color="#dfd4be"/>
+    </linearGradient>
+    <linearGradient id="beeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="wingVintage" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d1fae5" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#a7f3d0" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="royalBlueStripe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
   </defs>
 
-  <!-- Hexagonal Studio Shield -->
-  <polygon points="100,10 178,55 178,145 100,190 22,145 22,55" 
-           fill="#111622" stroke="url(#goldGlow)" stroke-width="4" filter="url(#shadow)"/>
-  
-  <!-- Subtle Internal Hexagon -->
-  <polygon points="100,24 165,61 165,139 100,176 35,139 35,61" 
-           fill="none" stroke="rgba(245, 158, 11, 0.2)" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Parchment Stamp Badge -->
+  <rect x="10" y="10" width="180" height="180" rx="16" fill="url(#parchmentBg)" stroke="#1a140f" stroke-width="4" filter="url(#inkShadow)"/>
+  <rect x="16" y="16" width="168" height="168" rx="12" fill="none" stroke="#b3a27f" stroke-width="1.5" stroke-dasharray="4 3"/>
 
-  <!-- Left Wing (Hex-facet) -->
-  <path d="M96 90 L52 64 C42 58 42 42 56 42 C70 42 86 64 96 82 Z" 
-        fill="url(#wingGlow)" stroke="#38bdf8" stroke-width="1.5"/>
+  <!-- Left Translucent Wing -->
+  <path d="M92 84 C70 50, 36 46, 38 68 C40 86, 68 98, 90 94 Z" 
+        fill="url(#wingVintage)" stroke="#1a140f" stroke-width="3"/>
+  <path d="M48 64 C60 72, 75 80, 88 88" stroke="#1a140f" stroke-width="1.5" stroke-linecap="round" fill="none"/>
 
-  <!-- Right Wing (Hex-facet) -->
-  <path d="M104 90 L148 64 C158 58 158 42 144 42 C130 42 114 64 104 82 Z" 
-        fill="url(#wingGlow)" stroke="#38bdf8" stroke-width="1.5"/>
+  <!-- Right Translucent Wing -->
+  <path d="M108 84 C130 50, 164 46, 162 68 C160 86, 132 98, 110 94 Z" 
+        fill="url(#wingVintage)" stroke="#1a140f" stroke-width="3"/>
+  <path d="M152 64 C140 72, 125 80, 112 88" stroke="#1a140f" stroke-width="1.5" stroke-linecap="round" fill="none"/>
 
-  <!-- Bee Body (Tactile Core) -->
-  <!-- Upper Torso -->
-  <ellipse cx="100" cy="95" rx="20" ry="16" fill="url(#goldGlow)"/>
-  
-  <!-- Abdomen Stripes -->
-  <path d="M84 104 Q100 108 116 104 Q114 116 100 122 Q86 116 84 104 Z" fill="#0f172a"/>
-  <path d="M87 118 Q100 124 113 118 Q110 132 100 140 Q90 132 87 118 Z" fill="url(#goldGlow)"/>
-  <path d="M91 133 Q100 138 109 133 Q106 148 100 156 Q94 148 91 133 Z" fill="#0f172a"/>
-  <!-- Stinger -->
-  <polygon points="100,166 97,156 103,156" fill="url(#goldGlow)"/>
+  <!-- Bee Body Torso -->
+  <ellipse cx="100" cy="115" rx="36" ry="46" fill="url(#beeGold)" stroke="#1a140f" stroke-width="4"/>
 
-  <!-- Antennae -->
-  <path d="M94 82 Q84 66 76 68" fill="none" stroke="url(#goldGlow)" stroke-width="2.5" stroke-linecap="round"/>
-  <circle cx="75" cy="68" r="3" fill="#ffd54f"/>
-  <path d="M106 82 Q116 66 124 68" fill="none" stroke="url(#goldGlow)" stroke-width="2.5" stroke-linecap="round"/>
-  <circle cx="125" cy="68" r="3" fill="#ffd54f"/>
+  <!-- Striped Abdomen (Ink & Royal Blue 70s Accents) -->
+  <path d="M68 100 Q100 108 132 100 L130 112 Q100 120 70 112 Z" fill="#1a140f"/>
+  <path d="M66 122 Q100 130 134 122 L131 135 Q100 144 69 135 Z" fill="url(#royalBlueStripe)" stroke="#1a140f" stroke-width="2"/>
+  <path d="M74 144 Q100 152 126 144 L121 154 Q100 162 79 154 Z" fill="#1a140f"/>
 
-  <!-- Eye Nodes -->
-  <circle cx="92" cy="92" r="3" fill="#0f172a"/>
-  <circle cx="108" cy="92" r="3" fill="#0f172a"/>
-  <circle cx="93" cy="91" r="1" fill="#ffffff"/>
-  <circle cx="109" cy="91" r="1" fill="#ffffff"/>
+  <!-- Sharp Stinger -->
+  <polygon points="100,172 94,158 106,158" fill="#1a140f"/>
+
+  <!-- Bee Head -->
+  <ellipse cx="100" cy="74" rx="26" ry="22" fill="url(#beeGold)" stroke="#1a140f" stroke-width="4"/>
+
+  <!-- Antennae with Royal Blue Nodules -->
+  <path d="M92 56 Q82 36 68 40" fill="none" stroke="#1a140f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="67" cy="40" r="5" fill="#1d4ed8" stroke="#1a140f" stroke-width="2"/>
+
+  <path d="M108 56 Q118 36 132 40" fill="none" stroke="#1a140f" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="133" cy="40" r="5" fill="#1d4ed8" stroke="#1a140f" stroke-width="2"/>
+
+  <!-- Big Stylized Eyes -->
+  <ellipse cx="88" cy="72" rx="7" ry="10" fill="#1a140f"/>
+  <ellipse cx="112" cy="72" rx="7" ry="10" fill="#1a140f"/>
+  <circle cx="86" cy="69" r="2.5" fill="#ffffff"/>
+  <circle cx="110" cy="69" r="2.5" fill="#ffffff"/>
+
+  <!-- Cheerful Smile -->
+  <path d="M94 84 Q100 88 106 84" fill="none" stroke="#1a140f" stroke-width="2.5" stroke-linecap="round"/>
 </svg>

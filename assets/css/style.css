@@ -181,6 +181,18 @@ img {
   padding: 3rem 0 2rem;
 }
 
+.mascot-badge {
+  width: 140px;
+  height: 140px;
+  border: var(--border-ink-thick);
+  border-radius: 50%;
+  margin: 0 auto 1.2rem;
+  box-shadow: var(--shadow-dossier-lg);
+  object-fit: cover;
+  background: var(--parchment-base);
+  display: block;
+}
+
 .studio-emblem-banner {
   max-width: 440px;
   width: 90%;
