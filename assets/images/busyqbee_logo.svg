@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd54f"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="wingGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#f59e0b" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Hexagonal Studio Shield -->
+  <polygon points="100,10 178,55 178,145 100,190 22,145 22,55" 
+           fill="#111622" stroke="url(#goldGlow)" stroke-width="4" filter="url(#shadow)"/>
+  
+  <!-- Subtle Internal Hexagon -->
+  <polygon points="100,24 165,61 165,139 100,176 35,139 35,61" 
+           fill="none" stroke="rgba(245, 158, 11, 0.2)" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Left Wing (Hex-facet) -->
+  <path d="M96 90 L52 64 C42 58 42 42 56 42 C70 42 86 64 96 82 Z" 
+        fill="url(#wingGlow)" stroke="#38bdf8" stroke-width="1.5"/>
+
+  <!-- Right Wing (Hex-facet) -->
+  <path d="M104 90 L148 64 C158 58 158 42 144 42 C130 42 114 64 104 82 Z" 
+        fill="url(#wingGlow)" stroke="#38bdf8" stroke-width="1.5"/>
+
+  <!-- Bee Body (Tactile Core) -->
+  <!-- Upper Torso -->
+  <ellipse cx="100" cy="95" rx="20" ry="16" fill="url(#goldGlow)"/>
+  
+  <!-- Abdomen Stripes -->
+  <path d="M84 104 Q100 108 116 104 Q114 116 100 122 Q86 116 84 104 Z" fill="#0f172a"/>
+  <path d="M87 118 Q100 124 113 118 Q110 132 100 140 Q90 132 87 118 Z" fill="url(#goldGlow)"/>
+  <path d="M91 133 Q100 138 109 133 Q106 148 100 156 Q94 148 91 133 Z" fill="#0f172a"/>
+  <!-- Stinger -->
+  <polygon points="100,166 97,156 103,156" fill="url(#goldGlow)"/>
+
+  <!-- Antennae -->
+  <path d="M94 82 Q84 66 76 68" fill="none" stroke="url(#goldGlow)" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="75" cy="68" r="3" fill="#ffd54f"/>
+  <path d="M106 82 Q116 66 124 68" fill="none" stroke="url(#goldGlow)" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="125" cy="68" r="3" fill="#ffd54f"/>
+
+  <!-- Eye Nodes -->
+  <circle cx="92" cy="92" r="3" fill="#0f172a"/>
+  <circle cx="108" cy="92" r="3" fill="#0f172a"/>
+  <circle cx="93" cy="91" r="1" fill="#ffffff"/>
+  <circle cx="109" cy="91" r="1" fill="#ffffff"/>
+</svg>
