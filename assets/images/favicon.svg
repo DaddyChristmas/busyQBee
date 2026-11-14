@@ -1,69 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <defs>
-    <!-- 70s Warm Parchment Background & Ink Dropshadow -->
-    <filter id="inkShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="3" dy="3" stdDeviation="0" flood-color="#120d09" flood-opacity="0.9"/>
-    </filter>
-    <linearGradient id="parchmentBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ece3cf"/>
-      <stop offset="100%" stop-color="#dfd4be"/>
-    </linearGradient>
-    <linearGradient id="beeGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="50%" stop-color="#d97706"/>
-      <stop offset="100%" stop-color="#b45309"/>
-    </linearGradient>
-    <linearGradient id="wingVintage" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#d1fae5" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#a7f3d0" stop-opacity="0.6"/>
-    </linearGradient>
-    <linearGradient id="royalBlueStripe" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e40af"/>
-      <stop offset="100%" stop-color="#172554"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Parchment Stamp Badge -->
-  <rect x="10" y="10" width="180" height="180" rx="16" fill="url(#parchmentBg)" stroke="#1a140f" stroke-width="4" filter="url(#inkShadow)"/>
-  <rect x="16" y="16" width="168" height="168" rx="12" fill="none" stroke="#b3a27f" stroke-width="1.5" stroke-dasharray="4 3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Clean Hex Shield Frame -->
+  <polygon points="60,6 108,33 108,87 60,114 12,87 12,33" 
+           fill="#ece3cf" stroke="#1a140f" stroke-width="4"/>
+  <polygon points="60,13 101,36 101,84 60,107 19,84 19,36" 
+           fill="none" stroke="#b3a27f" stroke-width="1.5" stroke-dasharray="3,3"/>
 
   <!-- Left Translucent Wing -->
-  <path d="M92 84 C70 50, 36 46, 38 68 C40 86, 68 98, 90 94 Z" 
-        fill="url(#wingVintage)" stroke="#1a140f" stroke-width="3"/>
-  <path d="M48 64 C60 72, 75 80, 88 88" stroke="#1a140f" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <path d="M57 54 C42 36, 24 38, 26 50 C28 62, 45 66, 56 61 Z" 
+        fill="#a7f3d0" fill-opacity="0.75" stroke="#1a140f" stroke-width="2.5"/>
 
   <!-- Right Translucent Wing -->
-  <path d="M108 84 C130 50, 164 46, 162 68 C160 86, 132 98, 110 94 Z" 
-        fill="url(#wingVintage)" stroke="#1a140f" stroke-width="3"/>
-  <path d="M152 64 C140 72, 125 80, 112 88" stroke="#1a140f" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <path d="M63 54 C78 36, 96 38, 94 50 C92 62, 75 66, 64 61 Z" 
+        fill="#a7f3d0" fill-opacity="0.75" stroke="#1a140f" stroke-width="2.5"/>
 
   <!-- Bee Body Torso -->
-  <ellipse cx="100" cy="115" rx="36" ry="46" fill="url(#beeGold)" stroke="#1a140f" stroke-width="4"/>
+  <ellipse cx="60" cy="74" rx="22" ry="28" fill="#f59e0b" stroke="#1a140f" stroke-width="3.5"/>
 
-  <!-- Striped Abdomen (Ink & Royal Blue 70s Accents) -->
-  <path d="M68 100 Q100 108 132 100 L130 112 Q100 120 70 112 Z" fill="#1a140f"/>
-  <path d="M66 122 Q100 130 134 122 L131 135 Q100 144 69 135 Z" fill="url(#royalBlueStripe)" stroke="#1a140f" stroke-width="2"/>
-  <path d="M74 144 Q100 152 126 144 L121 154 Q100 162 79 154 Z" fill="#1a140f"/>
-
-  <!-- Sharp Stinger -->
-  <polygon points="100,172 94,158 106,158" fill="#1a140f"/>
+  <!-- Clean Striped Abdomen (Ink & Royal Blue) -->
+  <path d="M41 65 Q60 70 79 65 L77 72 Q60 77 43 72 Z" fill="#1a140f"/>
+  <path d="M40 77 Q60 82 80 77 L78 84 Q60 89 42 84 Z" fill="#1d4ed8" stroke="#1a140f" stroke-width="1.5"/>
+  <path d="M46 89 Q60 93 74 89 L71 95 Q60 99 49 95 Z" fill="#1a140f"/>
+  <polygon points="60,105 56,98 64,98" fill="#1a140f"/>
 
   <!-- Bee Head -->
-  <ellipse cx="100" cy="74" rx="26" ry="22" fill="url(#beeGold)" stroke="#1a140f" stroke-width="4"/>
+  <ellipse cx="60" cy="48" rx="16" ry="14" fill="#f59e0b" stroke="#1a140f" stroke-width="3.5"/>
 
   <!-- Antennae with Royal Blue Nodules -->
-  <path d="M92 56 Q82 36 68 40" fill="none" stroke="#1a140f" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="67" cy="40" r="5" fill="#1d4ed8" stroke="#1a140f" stroke-width="2"/>
+  <path d="M55 37 Q48 24 40 26" fill="none" stroke="#1a140f" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="39" cy="26" r="3.5" fill="#1d4ed8" stroke="#1a140f" stroke-width="1.5"/>
 
-  <path d="M108 56 Q118 36 132 40" fill="none" stroke="#1a140f" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="133" cy="40" r="5" fill="#1d4ed8" stroke="#1a140f" stroke-width="2"/>
+  <path d="M65 37 Q72 24 80 26" fill="none" stroke="#1a140f" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="81" cy="26" r="3.5" fill="#1d4ed8" stroke="#1a140f" stroke-width="1.5"/>
 
-  <!-- Big Stylized Eyes -->
-  <ellipse cx="88" cy="72" rx="7" ry="10" fill="#1a140f"/>
-  <ellipse cx="112" cy="72" rx="7" ry="10" fill="#1a140f"/>
-  <circle cx="86" cy="69" r="2.5" fill="#ffffff"/>
-  <circle cx="110" cy="69" r="2.5" fill="#ffffff"/>
-
-  <!-- Cheerful Smile -->
-  <path d="M94 84 Q100 88 106 84" fill="none" stroke="#1a140f" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Friendly Eyes & Smile -->
+  <circle cx="53" cy="46" r="3.5" fill="#1a140f"/>
+  <circle cx="67" cy="46" r="3.5" fill="#1a140f"/>
+  <circle cx="52" cy="44.5" r="1.2" fill="#ffffff"/>
+  <circle cx="66" cy="44.5" r="1.2" fill="#ffffff"/>
+  <path d="M56 54 Q60 57 64 54" fill="none" stroke="#1a140f" stroke-width="2" stroke-linecap="round"/>
 </svg>
