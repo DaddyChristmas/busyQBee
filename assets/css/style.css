@@ -15,14 +15,14 @@
   --ink-primary: #1e1914;
   --ink-secondary: #42382e;
   --ink-faded: #6d5f52;
-  --ink-blue-stamp: #1d4ed8;
-  --ink-blue-faded: #2563eb;
+  --ink-purple-stamp: #6d28d9;
+  --ink-purple-faded: #7c3aed;
   
-  /* 70s Accents: Mustard, Royal Blue, Faded Teal, Tungsten Amber */
+  /* 70s Accents: Mustard, Royal Purple, Faded Teal, Tungsten Amber */
   --retro-mustard: #c98a2c;
   --retro-amber: #d97706;
-  --retro-blue: #1e40af;
-  --retro-blue-deep: #172554;
+  --retro-purple: #5b21b6;
+  --retro-purple-deep: #4c1d95;
   --retro-teal: #3b6b68;
   --retro-green: #2e5c38;
   
@@ -66,7 +66,7 @@ body {
 }
 
 a {
-  color: var(--ink-blue-stamp);
+  color: var(--ink-purple-stamp);
   text-decoration: underline;
   text-underline-offset: 3px;
   font-weight: 700;
@@ -74,8 +74,8 @@ a {
 }
 
 a:hover {
-  color: var(--retro-blue-deep);
-  background-color: rgba(29, 78, 216, 0.1);
+  color: var(--retro-purple-deep);
+  background-color: rgba(109, 40, 217, 0.1);
 }
 
 img {
@@ -151,13 +151,13 @@ img {
 }
 
 .nav-link:hover {
-  color: var(--ink-blue-stamp);
+  color: var(--ink-purple-stamp);
   text-decoration: underline;
 }
 
 .nav-btn {
   font-family: var(--font-typewriter);
-  background: var(--ink-blue-stamp);
+  background: var(--ink-purple-stamp);
   color: #fff !important;
   padding: 0.4rem 0.9rem;
   font-weight: 800;
@@ -170,7 +170,7 @@ img {
 }
 
 .nav-btn:hover {
-  background: var(--retro-blue);
+  background: var(--retro-purple);
   transform: translate(-1px, -1px);
   box-shadow: 3px 3px 0px #000;
 }
@@ -297,9 +297,9 @@ img {
 }
 
 .status-live {
-  background: #f0f7ff;
-  color: var(--ink-blue-stamp);
-  border-color: var(--ink-blue-stamp);
+  background: #fbf7ff;
+  color: var(--ink-purple-stamp);
+  border-color: var(--ink-purple-stamp);
   box-shadow: 2px 2px 0px rgba(0,0,0,0.5);
 }
 
@@ -390,7 +390,7 @@ img {
 }
 
 .availability-tag.play-btn {
-  background: var(--ink-blue-stamp);
+  background: var(--ink-purple-stamp);
   color: #fff !important;
   border: var(--border-ink);
   box-shadow: 2px 2px 0px #000;
@@ -398,7 +398,7 @@ img {
 }
 
 .availability-tag.play-btn:hover {
-  background: var(--retro-blue);
+  background: var(--retro-purple);
   transform: translate(-1px, -1px);
   box-shadow: 3px 3px 0px #000;
 }
@@ -414,7 +414,7 @@ img {
 }
 
 .mini-links a:hover {
-  color: var(--ink-blue-stamp);
+  color: var(--ink-purple-stamp);
 }
 
 /* Site Map Section — Manila Folder Style */
@@ -451,7 +451,7 @@ img {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--ink-blue-stamp);
+  color: var(--ink-purple-stamp);
   margin-bottom: 0.8rem;
   border-bottom: 1px dotted var(--ink-faded);
   padding-bottom: 0.3rem;
@@ -472,7 +472,7 @@ img {
 }
 
 .sitemap-col li a:hover {
-  color: var(--ink-blue-stamp);
+  color: var(--ink-purple-stamp);
   text-decoration: underline;
   padding-left: 3px;
 }
@@ -535,7 +535,7 @@ img {
 }
 
 .legal-tab-btn.active, .legal-tab-btn:hover {
-  background: var(--ink-blue-stamp);
+  background: var(--ink-purple-stamp);
   color: #fff !important;
 }
 
@@ -584,8 +584,8 @@ img {
 
 .legal-notice-box {
   background: var(--parchment-light);
-  border: 1px solid var(--ink-blue-stamp);
-  border-left: 6px solid var(--ink-blue-stamp);
+  border: 1px solid var(--ink-purple-stamp);
+  border-left: 6px solid var(--ink-purple-stamp);
   padding: 1rem 1.25rem;
   margin: 1.2rem 0;
   font-family: var(--font-typewriter);

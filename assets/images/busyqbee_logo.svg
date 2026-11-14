@@ -16,21 +16,21 @@
   <!-- Bee Body Torso -->
   <ellipse cx="60" cy="74" rx="22" ry="28" fill="#f59e0b" stroke="#1a140f" stroke-width="3.5"/>
 
-  <!-- Clean Striped Abdomen (Ink & Royal Blue) -->
+  <!-- Clean Striped Abdomen (Ink & Royal Purple) -->
   <path d="M41 65 Q60 70 79 65 L77 72 Q60 77 43 72 Z" fill="#1a140f"/>
-  <path d="M40 77 Q60 82 80 77 L78 84 Q60 89 42 84 Z" fill="#1d4ed8" stroke="#1a140f" stroke-width="1.5"/>
+  <path d="M40 77 Q60 82 80 77 L78 84 Q60 89 42 84 Z" fill="#6d28d9" stroke="#1a140f" stroke-width="1.5"/>
   <path d="M46 89 Q60 93 74 89 L71 95 Q60 99 49 95 Z" fill="#1a140f"/>
   <polygon points="60,105 56,98 64,98" fill="#1a140f"/>
 
   <!-- Bee Head -->
   <ellipse cx="60" cy="48" rx="16" ry="14" fill="#f59e0b" stroke="#1a140f" stroke-width="3.5"/>
 
-  <!-- Antennae with Royal Blue Nodules -->
+  <!-- Antennae with Royal Purple Nodules -->
   <path d="M55 37 Q48 24 40 26" fill="none" stroke="#1a140f" stroke-width="2.5" stroke-linecap="round"/>
-  <circle cx="39" cy="26" r="3.5" fill="#1d4ed8" stroke="#1a140f" stroke-width="1.5"/>
+  <circle cx="39" cy="26" r="3.5" fill="#6d28d9" stroke="#1a140f" stroke-width="1.5"/>
 
   <path d="M65 37 Q72 24 80 26" fill="none" stroke="#1a140f" stroke-width="2.5" stroke-linecap="round"/>
-  <circle cx="81" cy="26" r="3.5" fill="#1d4ed8" stroke="#1a140f" stroke-width="1.5"/>
+  <circle cx="81" cy="26" r="3.5" fill="#6d28d9" stroke="#1a140f" stroke-width="1.5"/>
 
   <!-- Friendly Eyes & Smile -->
   <circle cx="53" cy="46" r="3.5" fill="#1a140f"/>
