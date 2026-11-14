@@ -10,7 +10,7 @@ We believe in open standards, developer sovereignty, and acknowledging the found
   - **Authors:** Juan Linietsky, Ariel Manzur, and the Godot Engine contributors
   - **License:** MIT License
   - **URL:** https://godotengine.org
-  - **Usage:** Powers the core rendering, 2D CanvasTexture normal mapping, 3D world dioramas, lighting shaders, physics solver, scene tree architecture, and cross-platform mobile export across our catalog (*copterCove*, *railkeep*, *Rachel*).
+  - **Usage:** Powers the core rendering, 2D CanvasTexture normal mapping, 3D world dioramas, lighting shaders, physics solver, scene tree architecture, and cross-platform mobile export across our catalog (*Sunblade Shores*, *railkeep*, *Rachel*).
 
 ---
 
