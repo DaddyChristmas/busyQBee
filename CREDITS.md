@@ -41,6 +41,12 @@ We believe in open standards, developer sovereignty, and acknowledging the found
   - **URL:** https://drawthings.ai
   - **Usage:** Local on-device diffusion inference engine on Apple Silicon for game asset concept generation.
 
+- **Z-Image Turbo 1.0 (`z_image_turbo_1.0_i8x.ckpt`)**
+  - **Authors:** Alibaba Tongyi Lab (`Tongyi-MAI`)
+  - **License:** Apache License 2.0
+  - **URL:** https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+  - **Usage:** Standard local diffusion model (8 steps) for *railkeep* and *copterCove* / *Sunblade Shores* asset and key art generation via `draw-things-cli`.
+
 ---
 
 ## 4. Web & Typography Standards
